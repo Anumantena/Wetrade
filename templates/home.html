@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Wetrade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+{{ list1 }}
+{{ list2 }}
+
+    <div class="grid-container">
+    <div id="container">
+
+        
+        <h1>Exchange A</h1>
+        <div id=dc> 
+            Bit Coin
+            </div>
+        <button id = start> Buy </button>
+        <button id=start> Trade </button>
+        <br>
+
+        <div id=et>
+        Ethereum
+        </div>
+        
+        <button id=start> Buy </button>
+        <button id=start> Trade </button>
+        
+       
+    </div>
+        <div id="container1">
+        
+            <h1>Exchange B</h1>
+            <div id=dc>
+                Bit Coin
+            </div>
+        
+            <button id=start> Buy </button>
+            <button id=start> Trade </button>
+            <div id=et>
+                Etherum
+            </div>
+            
+            <button id=start> Buy </button>
+            <button id=start> Trade </button>
+        </div>
+    </div>  
+    </body>
+
+    <script type = "text/javascript">
+    document.getElementById("start").onclick=function(){
+    
+    
+    }
+    
+    
+    </script>
+ 
+  
+ 
+</body>
+
+</html>
