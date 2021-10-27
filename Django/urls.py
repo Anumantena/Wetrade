@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from wetrade.views import todo
+from wetrade.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', todo),
+    path('', api),
     # path('web/', coin)
 ]

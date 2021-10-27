@@ -11,47 +11,53 @@
 </head>
 
 <body>
-{{ list1 }}
-{{ list2 }}
-
+<!-- Bit Coin value1 : {{ rateBTC }}
+Ethereum value1 : {{ rateETH }}<br>
+Bit Coin value2 : {{ rate1BTC }}
+Ethereum value2 : {{ rate1ETH }} -->
     <div class="grid-container">
     <div id="container">
-
-        
+  
         <h1>Exchange A</h1>
-        <div id=dc> 
-            Bit Coin
-            </div>
-        <button id = start> Buy </button>
-        <button id=start> Trade </button>
-        <br>
+        <!-- <div id=dc>  -->
+            <p style="color:black;">BIT COIN(BTC): {{ rateBTC }}
+            <button id=start onclick="return confirm('Are you sure you want buy?');"> Buy </button>
+            <button id=start onclick="return confirm('Are you sure you want sell?');"> Trade </button>
+            </p>
+        <!-- <div id=et> -->
+            <p style="color:black;">ETHEREUM(ETH):{{ rateETH }}
+            
 
-        <div id=et>
-        Ethereum
-        </div>
-        
-        <button id=start> Buy </button>
-        <button id=start> Trade </button>
+       <!-- <button><a href="https://robinhood.com/crypto/BTC" class="start">Buy</a></button> -->
+        <button id=start onclick="return confirm('Are you sure you want buy?');"> Buy </button>
+        <button id=start onclick="return confirm('Are you sure you want sell?');"> Trade </button>
+        </p>
         
        
     </div>
         <div id="container1">
         
             <h1>Exchange B</h1>
-            <div id=dc>
-                Bit Coin
-            </div>
+            <!-- <div id=dc> -->
+                <p style="color:black;">BIT COIN(BTC):{{ rate1BTC }}
+                
+            <!-- </div> -->
         
-            <button id=start> Buy </button>
-            <button id=start> Trade </button>
-            <div id=et>
-                Etherum
-            </div>
+            <button id=start onclick="return confirm('Are you sure you want buy?');"> Buy </button>
+            <button id=start onclick="return confirm('Are you sure you want sell?');"> Trade </button>
+            </p>
+            <!-- <br> -->
+            <!-- <button id=start> Trade </button> -->
+            <!-- <div id=et> -->
+                <p style="color:black;">ETHEREUM (ETH):{{ rate1ETH }}
+            <!-- </div> -->
             
-            <button id=start> Buy </button>
-            <button id=start> Trade </button>
+            <button id=start onclick="return confirm('Are you sure you want buy?');"> Buy </button>
+            <button id=start onclick="return confirm('Are you sure you want sell?');"> Trade </button>
+            </p>
         </div>
     </div>  
+
     </body>
 
     <script type = "text/javascript">
